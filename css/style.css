@@ -1,0 +1,231 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Batang', serif;
+}
+
+body,html {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#pick img {
+    filter: drop-shadow( 2px 2px  #000) ;
+    display: inline-block;
+    align-items: left;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+button { /*삭제 버튼 */
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    padding: 6px;
+    outline: none;
+    left:-1.5%
+}
+
+#clock { /*시계*/
+    font-family: 'Black Han Sans', sans-serif;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    color: white;
+    font-size: 90px;
+    -webkit-text-stroke: 1px rgba(180, 180, 180, 0.596);
+    padding-left: 100px;
+    padding-top: 350px;
+    
+}
+
+#login-form {/*이름물어보는 폼 전체*/
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding-left: 225px;
+    padding-top: 450px;
+    color: white;
+    font-size: 36px;
+    text-shadow: 1px 1px rgb(0 0 0 / 50%)
+}
+
+#login-form input::placeholder { /*이름칸 써져있는 주석*/
+    color: green;
+    font-size: 12px;
+    font-family: 'Gowun Batang', serif;
+    
+}
+
+#login-form  input:first-child { /*이름쓰는 칸*/
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    color: black;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-left:50px;
+    margin-top: 100px;
+    width: 230px;
+    height: 15px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    vertical-align: center;
+    font-family: 'Gowun Batang', serif;
+}
+
+
+#login-form  input:last-child {/*로그인 버튼*/
+    position: relative;
+    left: 70%;
+    top: 00%;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 140px;
+    height: 35px;
+    background-color: #ffffffa8;
+    font-family: 'Gowun Batang', serif;
+    text-shadow: 2px 2px rgb(0 0 0 / 40%);
+    
+}
+
+#todo-form input {/*투두 인덱스 입력한것*/
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+        outline: none;
+    padding: 3px;
+    background-color: rgb(255, 255, 255, 0.5) ;
+    width: 1920px;
+    
+    
+    
+}
+
+#todo-form input::placeholder {/*투두 플레이스홀더 */
+    color: black;
+    text-decoration: underline pink wavy;
+    
+}
+
+#todo-list {/*투두리스트 입력했던 내용*/
+    
+    position: absolute;
+    left: 10%;
+    right: 20%;
+    top: 10%;
+    padding-top: 80px;
+    padding-left: 480px;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    list-style-type: none;
+    background-color: transparent;
+    width: 1850px;
+    
+    
+}
+
+#todo-list li{/*투두리스트 입력했던 내용의 칸*/
+    position: relative;
+    border-style: none;
+    border-color: white;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, 0.3),#00ff0000,#00ff0000);
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    
+    
+}
+#greeting {/*이름 +인사*/
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding-top: 440px;
+    padding-left: 105px;
+    color: #fff;
+    font-size: 26px;
+    text-shadow: 3px 2px rgb(0 0 0 / 30%);
+    font-family: 'Noto Serif KR', serif;
+    
+    
+}
+
+#pick {/*아이스크림 추천*/
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%);
+    
+    font-size: 16px; 
+    text-align: center;
+    width: 2100px;
+    padding-bottom: 50px;
+    color: white;
+    text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+    
+    border-top: dashed white;
+    border-bottom: dashed white;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    
+}
+
+#weather {/*날씨정보*/
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-image: linear-gradient(90deg, red, orange, yellow, orange );
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 35px;
+    font-size: 16px; 
+    text-shadow: 1px 1px rgb(0 0 0 / 30%);
+    
+}
+
+#pick img{
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
+    vertical-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+
